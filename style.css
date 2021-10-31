@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft: hsl(300, 69%, 71%);
+}
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--violet);
+  background-image: url("./images/bg-mobile.svg");
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  margin-bottom: 38px;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0 22px 26px 22px;
+}
+
+.mockup-image {
+  max-width: 330px;
+  margin: 0 22px 28px 22px;
+}
+
+.logo {
+  margin: 38px 22px 38px 22px;
+}
+
+.button-primary {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 12px;
+  padding: 1rem 0;
+  width: 220px;
+  color: var(--violet);
+  box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035);
+  -webkit-box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035);
+  -moz-box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035);
+  margin-bottom: 56px;
+}
+
+.button-primary:hover {
+  border: 1px solid var(--soft);
+  background-color: var(--soft);
+  color: white;
+  transition: 0.2s ease-in;
+}
+
+.button-primary:active {
+  border: 1px solid var(--soft);
+  background-color: var(--soft);
+  color: white;
+  transition: 0.2s ease-in;
+}
+
+.text-content {
+  margin-bottom: 100px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+}
+
+
+.socials div {
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.socials div:last-child {
+  margin-right: 0;
+}
+
+.socials div i {
+  color: white;
+}
+
+.socials div:hover {
+  border: 1px solid var(--soft);
+  transition: 0.3s ease-in;
+}
+
+.socials div:hover *{
+  color: var(--soft);
+  transition: 0.3s ease-in;
+}
+
+
+@media (min-width: 376px) {
+
+  h1 {
+    font-size: 48px;
+    text-align: left;
+    line-height: 64px;
+  }
+  p {
+    text-align: left;
+    margin: 0 0 38px;
+    font-size: 20px;
+  }
+
+  .mockup-image {
+    min-width: 700px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text-content {
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    margin: 0 24px;
+  }
+
+  .socials {
+    margin: 0;
+  }
+
+  .text-content .socials {
+    align-self: flex-end;
+  }
+
+  .button-primary {
+    margin-bottom: 275px;
+  }
+}
