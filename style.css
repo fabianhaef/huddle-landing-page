@@ -140,6 +140,7 @@ p {
   .content {
     display: flex;
     flex-direction: row;
+    margin-bottom: 120px;
   }
 
   .text-content {
